@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Bus Tracking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Real-Time Bus Tracking System</h1>
+        <p>Track your bus in real-time and get updates on arrival times!</p>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Find Your Bus</h2>
+            <form id="bus-form">
+                <label for="route-number">Route Number:</label>
+                <input type="text" id="route-number" name="route-number" required>
+
+                <label for="current-location">Current Location:</label>
+                <input type="text" id="current-location" name="current-location" required>
+
+                <button type="submit">Track Bus</button>
+            </form>
+        </section>
+
+        <section class="info-section">
+            <h2>Bus Information</h2>
+            <div id="bus-info">
+                <p>Please enter a route number to see the bus information.</p>
+            </div>
+        </section>
+
+        <section class="advertisement-section">
+            <h2>Advertisements</h2>
+            <div class="advertisement">
+                <img src="https://couponswala.com/blog/wp-content/uploads/2020/10/Bus-Wala-Offers.jpg" alt="Ad 1">
+                <p>Get 20% off on your next bus ticket! Use code: BUS20</p>
+            </div>
+            <div class="advertisement">
+                <img src="https://images.railyatri.in/ry_images_prod/Welcome-640x320--2-1-1718086010.png" alt="Ad 2">
+                <p>Join our loyalty program and earn free rides!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p> 2025 Real-Time Bus Tracking. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #007bff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.form-section,
+.info-section,
+.advertisement-section {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.advertisement-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.advertisement {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.advertisement img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #007bff;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
